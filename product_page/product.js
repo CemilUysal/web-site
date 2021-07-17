@@ -25,10 +25,16 @@ $(document).ready(function(){
         }
         $(".link").click(function(){
             type = $(this).text();
-            alert(type);
+            var id ;
+            for(i = 0; i<data.length;i++){
+                if(type == data[i].name){
+                    id = data[i].id;
+                }
+            }
+            $(this).attr("href", "../detay_page/detay.html?name="+id);
         });
     }
     
-    $(".urun-name").text();
+    
    
 });
