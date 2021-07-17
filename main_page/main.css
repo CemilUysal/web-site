@@ -1,0 +1,10 @@
+.fa-star{
+    font-size: 100px;
+}
+.container{
+    border-radius: 30px;
+    min-height: 750px;
+}
+.container .slider{
+    height: 500px;
+}
