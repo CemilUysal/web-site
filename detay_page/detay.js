@@ -3,6 +3,7 @@ $(document).ready(function(){
     var brandsName;
     var brandsId;
     var markaData;
+    var colorCode;
     var url = document.location.href,
         params = url.split('?')[1].split('&'),
         data = {}, tmp;
@@ -24,7 +25,7 @@ $(document).ready(function(){
     markaRequest.open("GET","https://cemil-web.herokuapp.com/data/brands-api.php");
     markaRequest.onload = function(){
         markaData = JSON.parse(markaRequest.responseText);
-    }
+    };
     markaRequest.send();
     function findBrand(brandsId){
         for(i=0; i<markaData.length;i++){
@@ -33,11 +34,25 @@ $(document).ready(function(){
             }
         }
     }
+    
+    var colorRequest = new XMLHttpRequest();     
+    colorRequest.open("GET","https://cemil-web.herokuapp.com/data/colors-api.php");
+    colorRequest.onload = function(){
+        colorData = JSON.parse(colorRequest.responseText);
+        for(i=0; i<colorData.length;i++){
+            if(colorCode == colorData[i].Code){
+                $(".renk").text(colorData[i].Name)
+                
+            }
+        }
+    };
+    colorRequest.send();
+
     function renderHtml(products){
         for(i = 0 ; i<products.length;i++){
             if(data.name == products[i].id){
                 for(j=0; j<products[i].imagePaths.length;j++){
-                    commentsHtml += '<div><img src ="'+products[i].imagePaths[j]+'"></div>';
+                    commentsHtml += '<div>  <img src ="'+products[i].imagePaths[j]+'" width="25%" class="float-left">  </div>';
                 }
                 $(".bx-slider").html(commentsHtml);
                 $(".urun-name").text(products[i].name);
@@ -45,14 +60,11 @@ $(document).ready(function(){
                 brandsId = products[i].brandId;
                 findBrand(brandsId);
                 $(".marka").text(brandsName);
+                colorCode = products[i].id;
+                alert(colorCode)
+                
+                
             }
         }
     }
-    $(function(){
-        $('.bxslider').bxSlider({
-          mode: 'fade',
-          captions: true,
-          slideWidth: 600
-        });
-      });
 });

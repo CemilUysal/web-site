@@ -1,3 +1,10 @@
 .urun{
     margin: 5% auto;
 }
+.float-left{
+    float: left;
+    margin-left: 5%;
+}
+.clear{
+    clear: both;
+}
