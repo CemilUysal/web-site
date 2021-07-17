@@ -4,6 +4,7 @@ $(document).ready(function(){
     var brandsId;
     var markaData;
     var colorCode;
+    var colorData;
     var url = document.location.href,
         params = url.split('?')[1].split('&'),
         data = {}, tmp;
@@ -25,32 +26,35 @@ $(document).ready(function(){
     markaRequest.open("GET","https://cemil-web.herokuapp.com/data/brands-api.php");
     markaRequest.onload = function(){
         markaData = JSON.parse(markaRequest.responseText);
-    };
-    markaRequest.send();
-    function findBrand(brandsId){
-        for(i=0; i<markaData.length;i++){
+         for(i=0; i<markaData.length;i++){
             if(brandsId == markaData[i].id){
                 brandsName = markaData[i].name;
+		        $(".marka").text(brandsName);
             }
         }
-    }
-    
+    };
+    markaRequest.send();
+
     var colorRequest = new XMLHttpRequest();     
     colorRequest.open("GET","https://cemil-web.herokuapp.com/data/colors-api.php");
     colorRequest.onload = function(){
-        var colorData = JSON.parse(colorRequest.responseText);  
+        colorData = JSON.parse(colorRequest.responseText);
         for(i=0; i<colorData.length;i++){
-            for(j=0; j<colorData[i].Children.length;j++){
+            for(j=0;j<colorData[i].Children.length; j++){
                 if(colorCode == colorData[i].Children[j].Code){
-                    $(".renk").text(colorData[i].Children[j].Name);
+                    colorName = colorData[i].Children[j].Name;
+		            $(".renk").text(colorName);
                 }
             }
         }
+       
+        
     };
     colorRequest.send();
 
-
     function renderHtml(products){
+        brandsId="";
+        brandsName="";
         for(i = 0 ; i<products.length;i++){
             if(data.name == products[i].id){
                 for(j=0; j<products[i].imagePaths.length;j++){
@@ -61,8 +65,8 @@ $(document).ready(function(){
                 $(".fiyat").text(products[i].price);
                 brandsId = products[i].brandId;
                 colorCode = products[i].colorCode;
-                findBrand(brandsId);
-                $(".marka").text(brandsName);
+                
+
             }
         }
     }
