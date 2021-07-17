@@ -38,15 +38,17 @@ $(document).ready(function(){
     var colorRequest = new XMLHttpRequest();     
     colorRequest.open("GET","https://cemil-web.herokuapp.com/data/colors-api.php");
     colorRequest.onload = function(){
-        colorData = JSON.parse(colorRequest.responseText);
+        var colorData = JSON.parse(colorRequest.responseText);  
         for(i=0; i<colorData.length;i++){
-            if(colorCode == colorData[i].Code){
-                $(".renk").text(colorData[i].Name)
-                
+            for(j=0; j<colorData[i].Children.length;j++){
+                if(colorCode == colorData[i].Children[j].Code){
+                    $(".renk").text(colorData[i].Children[j].Name);
+                }
             }
         }
     };
     colorRequest.send();
+
 
     function renderHtml(products){
         for(i = 0 ; i<products.length;i++){
@@ -58,12 +60,9 @@ $(document).ready(function(){
                 $(".urun-name").text(products[i].name);
                 $(".fiyat").text(products[i].price);
                 brandsId = products[i].brandId;
+                colorCode = products[i].colorCode;
                 findBrand(brandsId);
                 $(".marka").text(brandsName);
-                colorCode = products[i].id;
-                alert(colorCode)
-                
-                
             }
         }
     }
