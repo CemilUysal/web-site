@@ -1,0 +1,42 @@
+[
+    {
+      "id": 17,
+      "availablein": 0,
+      "name": "CooL",
+      "code": "cool",
+      "rank": 1,
+      "flags": "Normal",
+      "dateTime": "0001-01-01T00:00:00",
+      "productCount": 0
+    },
+    {
+      "id": 4,
+      "availablein": 0,
+      "name": "SaturN",
+      "code": "saturn",
+      "rank": 0,
+      "flags": "Normal",
+      "dateTime": "0001-01-01T00:00:00",
+      "productCount": 0
+    },
+    {
+      "id": 3,
+      "availablein": 0,
+      "name": "LibrarY",
+      "code": "library",
+      "rank": 1,
+      "flags": "Normal",
+      "dateTime": "0001-01-01T00:00:00",
+      "productCount": 0
+    },
+    {
+      "id": 2,
+      "availablein": 0,
+      "name": "ChooseN",
+      "code": "choosen",
+      "rank": 0,
+      "flags": "Normal",
+      "dateTime": "0001-01-01T00:00:00",
+      "productCount": 0
+    }
+  ]

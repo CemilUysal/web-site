@@ -1,0 +1,122 @@
+ [
+    {
+      "id": 1,
+      "name": "FİLE GEÇİŞLİ MAXİ BOY TUNİK - Siyah",
+      "imagePaths": [ "https://cdn.secilstore.com/docs/images/product/half/11212104204490/0008/1.jpg", "https://cdn.secilstore.com/docs/images/product/half/11212104204490/0008/2.jpg", "https://cdn.secilstore.com/docs/images/product/half/11212104204490/0008/3.jpg" ],
+      "price": 949.90,
+      "discountedPrice": 0,
+      "brandId": 2,
+      "colorCode": "0077",
+      "sliderId": 1
+    },
+    {
+      "id": 2,
+      "name": "BOL PAÇA PANTOLON - Taba",
+      "imagePaths": [ "https://cdn.secilstore.com/docs/images/product/half/11212107003002/0053/1.jpg?x=88ut6", "https://cdn.secilstore.com/docs/images/product/half/11212107003002/0053/2.jpg?x=c3gme", "https://cdn.secilstore.com/docs/images/product/half/11212107003002/0053/3.jpg?x=uenıt" ],
+      "price": 139.90,
+      "discountedPrice": 89.90,
+      "brandId": 3,
+      "colorCode": "0030",
+      "sliderId": 1
+    },
+    {
+      "id": 3,
+      "name": "CEP DETAYLI DİZ ÜSTÜ ELBİSE - Bej",
+      "imagePaths": [ "https://cdn.secilstore.com/docs/images/product/half/10212104003525/0037/2.jpg", "https://cdn.secilstore.com/docs/images/product/half/10212104003525/0037/3.jpg" ],
+      "price": 299.90,
+      "discountedPrice": 0,
+      "brandId": 4,
+      "colorCode": "0061",
+      "sliderId": 2
+    },
+    {
+      "id": 4,
+      "name": "OMUZ PENCERELİ ELBİSE - Sarı",
+      "imagePaths": [ "https://cdn.secilstore.com/docs/images/product/half/10212104003512/0005/1.jpg", "https://cdn.secilstore.com/docs/images/product/half/10212104003512/0005/3.jpg" ],
+      "price": 499.90,
+      "discountedPrice": 169.90,
+      "brandId": 17,
+      "colorCode": "0020",
+      "sliderId": 2
+    },
+    {
+      "id": 5,
+      "name": "BELİ KEMERLİ DESENLİ MAXİ BOY ELBİSE - Vizon",
+      "imagePaths": [ "https://cdn.secilstore.com/docs/images/product/half/11212104003507/0049/1.jpg?x=ujı4s", "https://cdn.secilstore.com/docs/images/product/half/11212104003507/0049/3.jpg?x=3g4wx" ],
+      "price": 99.90,
+      "discountedPrice": 0,
+      "brandId": 2,
+      "colorCode": "0180",
+      "sliderId": 3
+    },
+    {
+      "id": 6,
+      "name": "VOLANLI V YAKALI DANTEL ELBİSE - Bej",
+      "imagePaths": [ "https://cdn.secilstore.com/docs/images/product/half/10212104003625/0037/1.jpg", "https://cdn.secilstore.com/docs/images/product/half/10212104003625/0037/3.jpg" ],
+      "price": 1599.90,
+      "discountedPrice": 1499.90,
+      "brandId": 3,
+      "colorCode": "0315",
+      "sliderId": 3
+    },
+    {
+      "id": 7,
+      "name": "KEMERLİ MAXİ BOY ELBİSE - Ekru",
+      "imagePaths": [ "https://cdn.secilstore.com/docs/images/product/half/11212104003506/0015/1.jpg?x=65uvb", "https://cdn.secilstore.com/docs/images/product/half/11212104003506/0015/3.jpg?x=7ucl7" ],
+      "price": 159.90,
+      "discountedPrice": 139.90,
+      "brandId": 4,
+      "colorCode": "0017",
+      "sliderId": 4
+    },
+    {
+      "id": 8,
+      "name": "BÜYÜK BEDEN BOL KESİM KRUVAZE YAKA ELBİSE - Haki",
+      "imagePaths": [ "https://cdn.secilstore.com/docs/images/product/half/14212104003561/0050/1.jpg", "https://cdn.secilstore.com/docs/images/product/half/14212104003561/0050/3.jpg" ],
+      "price": 399.90,
+      "discountedPrice": 0,
+      "brandId": 17,
+      "colorCode": "0116",
+      "sliderId": 4
+    },
+    {
+      "id": 9,
+      "name": "EKOSE DESENLİ BELİ KEMERLİ ELBİSE - Bej",
+      "imagePaths": [ "https://cdn.secilstore.com/docs/images/product/half/10212104003537/0037/1.jpg?x=sdvku", "https://cdn.secilstore.com/docs/images/product/half/10212104003537/0037/3.jpg?x=aerlu" ],
+      "price": 699.90,
+      "discountedPrice": 399.90,
+      "brandId": 2,
+      "colorCode": "0017",
+      "sliderId": 5
+    },
+    {
+      "id": 10,
+      "name": "Beli Kuşaklı Gömlek Elbise - Mavi",
+      "imagePaths": [ "https://cdn.secilstore.com/docs/images/product/half/10212104003531/0000/1.jpg", "https://cdn.secilstore.com/docs/images/product/half/10212104003531/0000/4.jpg" ],
+      "price": 299.90,
+      "discountedPrice": 0,
+      "brandId": 3,
+      "colorCode": "0116",
+      "sliderId": 5
+    },
+    {
+      "id": 11,
+      "name": "KEMERLİ GÖMLEK ELBİSE - Haki",
+      "imagePaths": [ "https://cdn.secilstore.com/docs/images/product/half/10212104003529/0050/1.jpg?x=cquvs", "https://cdn.secilstore.com/docs/images/product/half/10212104003529/0050/3.jpg?x=edyıf" ],
+      "price": 59.90,
+      "discountedPrice": 0,
+      "brandId": 4,
+      "colorCode": "0061",
+      "sliderId": 1
+    },
+    {
+      "id": 12,
+      "name": "DESENLİ KARE YAKA ELBİSE - Bej",
+      "imagePaths": [ "https://cdn.secilstore.com/docs/images/product/half/10212104003614/0037/1.jpg?x=wıwvu", "https://cdn.secilstore.com/docs/images/product/half/10212104003614/0037/3.jpg?x=6khjc" ],
+      "price": 899.90,
+      "discountedPrice": 699.90,
+      "brandId": 17,
+      "colorCode": "0020",
+      "sliderId": 1
+    }
+  ]
